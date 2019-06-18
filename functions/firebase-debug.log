@@ -1,0 +1,74 @@
+[debug] [2019-06-18T14:45:31.370Z] ----------------------------------------------------------------------
+[debug] [2019-06-18T14:45:31.372Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aareon2\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2019-06-18T14:45:31.372Z] CLI Version:   6.11.0
+[debug] [2019-06-18T14:45:31.372Z] Platform:      win32
+[debug] [2019-06-18T14:45:31.372Z] Node Version:  v8.16.0
+[debug] [2019-06-18T14:45:31.372Z] Time:          Tue Jun 18 2019 16:45:31 GMT+0200 (Romance Summer Time)
+[debug] [2019-06-18T14:45:31.372Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-18T14:45:31.385Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-18T14:45:31.386Z] > authorizing via signed-in user
+[debug] [2019-06-18T14:45:31.386Z] [iam] checking project instacool-671c8 for permissions ["firebase.projects.get"]
+[debug] [2019-06-18T14:45:31.387Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-06-18T14:45:31.387Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-06-18T14:45:31.569Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-18T14:45:31.574Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/instacool-671c8:testIamPermissions  
+
+[debug] [2019-06-18T14:45:32.504Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-18T14:45:32.504Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/instacool-671c8  
+ 
+[debug] [2019-06-18T14:45:33.354Z] <<< HTTP RESPONSE 200
+[info] +  functions: Using node@8 from host.
+[debug] [2019-06-18T14:45:33.354Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/905664519256:getServerAppConfig  
+ 
+[debug] [2019-06-18T14:45:33.640Z] <<< HTTP RESPONSE 200
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions" for Cloud Functions...
+[debug] [2019-06-18T14:45:34.022Z] Functions runtime initialized.
+[debug] [2019-06-18T14:45:34.022Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions-test" to be installed as a development dependency. To fix this, run "npm install --save-dev firebase-functions-test" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-06-18T14:48:46.433Z] ----------------------------------------------------------------------
+[debug] [2019-06-18T14:48:46.433Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aareon2\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2019-06-18T14:48:46.433Z] CLI Version:   6.11.0
+[debug] [2019-06-18T14:48:46.433Z] Platform:      win32
+[debug] [2019-06-18T14:48:46.433Z] Node Version:  v8.16.0
+[debug] [2019-06-18T14:48:46.433Z] Time:          Tue Jun 18 2019 16:48:46 GMT+0200 (Romance Summer Time)
+[debug] [2019-06-18T14:48:46.433Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-18T14:48:46.433Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-18T14:48:46.433Z] > authorizing via signed-in user
+[debug] [2019-06-18T14:48:46.433Z] [iam] checking project instacool-671c8 for permissions ["firebase.projects.get"]
+[debug] [2019-06-18T14:48:46.433Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/instacool-671c8:testIamPermissions  
+
+[debug] [2019-06-18T14:48:47.341Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-18T14:48:47.341Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/instacool-671c8  
+ 
+[debug] [2019-06-18T14:48:48.185Z] <<< HTTP RESPONSE 200
+[info] +  functions: Using node@8 from host.
+[debug] [2019-06-18T14:48:48.201Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/905664519256:getServerAppConfig  
+ 
+[debug] [2019-06-18T14:48:48.513Z] <<< HTTP RESPONSE 200
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions" for Cloud Functions...
+[debug] [2019-06-18T14:48:48.875Z] Functions runtime initialized.
+[debug] [2019-06-18T14:48:48.875Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-18T14:48:49.796Z] firebase-admin has been stubbed.
+[info] i  functions: HTTP trigger initialized at http://localhost:5000/instacool-671c8/us-central1/helloWorld
+[debug] [2019-06-18T14:49:54.638Z] Accepted request GET /instacool-671c8/us-central1/helloWorld --> helloWorld
+[debug] [2019-06-18T14:49:54.998Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "helloWorld"
+[debug] [2019-06-18T14:49:54.999Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-18T14:49:55.914Z] firebase-admin has been stubbed.
+[debug] [2019-06-18T14:49:55.925Z] Trigger "helloWorld" has been found, beginning invocation!
+[debug] [2019-06-18T14:49:55.925Z] 
+[debug] [2019-06-18T14:49:55.925Z] Running helloWorld in mode HTTPS
+[info] i  Your code has been provided a "firebase-admin" instance.
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-06-18T14:49:55.932Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\Aareon2\\Desktop\\ReactProjects\\poc_dev\\poc\\functions\\44596"}
+[debug] [2019-06-18T14:49:55.934Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\Aareon2\\Desktop\\ReactProjects\\poc_dev\\poc\\functions\\44596"}
+[debug] [2019-06-18T14:49:55.941Z] Ephemeral server used!
+[debug] [2019-06-18T14:49:55.946Z] Ephemeral server survived.
+[info] i  functions: Finished "helloWorld" in ~1s
