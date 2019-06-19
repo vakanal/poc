@@ -32,7 +32,7 @@ export default () => {
 
       next();
     } catch (error) {
-      res.status(403).send("Error al autorizar");
+      res.status(403).send(`Error al autorizar: ${ error }`);
     }
   });
   // ! Middleware de autentificación - End:

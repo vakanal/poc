@@ -36,5 +36,5 @@
     "@types/react-dom": "^16.8.4",
     "typescript": "^3.5.1"
   },
-  "proxy": ""
+  "proxy": "http://localhost:5000/instacool-671c8/us-central1"
 }
