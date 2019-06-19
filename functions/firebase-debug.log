@@ -256,3 +256,79 @@
     at Module._compile (module.js:653:30)
     at Object.Module._extensions..js (module.js:664:10)
 [warn] !  Your function was killed because it raised an unhandled error.
+[debug] [2019-06-19T11:19:27.243Z] ----------------------------------------------------------------------
+[debug] [2019-06-19T11:19:27.244Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aareon2\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2019-06-19T11:19:27.245Z] CLI Version:   6.11.0
+[debug] [2019-06-19T11:19:27.245Z] Platform:      win32
+[debug] [2019-06-19T11:19:27.245Z] Node Version:  v8.16.0
+[debug] [2019-06-19T11:19:27.245Z] Time:          Wed Jun 19 2019 13:19:27 GMT+0200 (Romance Summer Time)
+[debug] [2019-06-19T11:19:27.245Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-19T11:19:27.253Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-19T11:19:27.253Z] > authorizing via signed-in user
+[debug] [2019-06-19T11:19:27.253Z] [iam] checking project instacool-671c8 for permissions ["firebase.projects.get"]
+[debug] [2019-06-19T11:19:27.254Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/instacool-671c8:testIamPermissions  
+
+[debug] [2019-06-19T11:19:28.147Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-19T11:19:28.148Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/instacool-671c8  
+ 
+[debug] [2019-06-19T11:19:28.981Z] <<< HTTP RESPONSE 200
+[info] +  functions: Using node@8 from host.
+[debug] [2019-06-19T11:19:28.986Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/905664519256:getServerAppConfig  
+ 
+[debug] [2019-06-19T11:19:29.235Z] <<< HTTP RESPONSE 200
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions" for Cloud Functions...
+[debug] [2019-06-19T11:19:29.617Z] Functions runtime initialized.
+[debug] [2019-06-19T11:19:29.617Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-19T11:19:30.544Z] firebase-admin has been stubbed.
+[warn] !  Error: Failed to read credentials from file key.json : Error: ENOENT: no such file or directory, open 'C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\key.json '
+    at FirebaseAppError.FirebaseError [as constructor] (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\utils\error.js:42:28)
+    at FirebaseAppError.PrefixedFirebaseError [as constructor] (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\utils\error.js:88:28)
+    at new FirebaseAppError (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\utils\error.js:122:28)
+    at readCredentialFile (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\auth\credential.js:340:15)
+    at credentialFromFile (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\auth\credential.js:319:27)
+    at new ApplicationDefaultCredential (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\auth\credential.js:294:32)
+    at Object.applicationDefault (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\firebase-namespace.js:233:36)
+    at Object.<anonymous> (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\lib\createServer.js:6:34)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[warn] !  Your function was killed because it raised an unhandled error.
+[debug] [2019-06-19T11:21:50.660Z] ----------------------------------------------------------------------
+[debug] [2019-06-19T11:21:50.660Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aareon2\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2019-06-19T11:21:50.660Z] CLI Version:   6.11.0
+[debug] [2019-06-19T11:21:50.660Z] Platform:      win32
+[debug] [2019-06-19T11:21:50.660Z] Node Version:  v8.16.0
+[debug] [2019-06-19T11:21:50.660Z] Time:          Wed Jun 19 2019 13:21:50 GMT+0200 (Romance Summer Time)
+[debug] [2019-06-19T11:21:50.660Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-19T11:21:50.660Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-19T11:21:50.660Z] > authorizing via signed-in user
+[debug] [2019-06-19T11:21:50.660Z] [iam] checking project instacool-671c8 for permissions ["firebase.projects.get"]
+[debug] [2019-06-19T11:21:50.676Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/instacool-671c8:testIamPermissions  
+
+[debug] [2019-06-19T11:21:51.652Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-19T11:21:51.653Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/instacool-671c8  
+ 
+[debug] [2019-06-19T11:21:52.512Z] <<< HTTP RESPONSE 200
+[info] +  functions: Using node@8 from host.
+[debug] [2019-06-19T11:21:52.516Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/905664519256:getServerAppConfig  
+ 
+[debug] [2019-06-19T11:21:52.814Z] <<< HTTP RESPONSE 200
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions" for Cloud Functions...
+[debug] [2019-06-19T11:21:53.181Z] Functions runtime initialized.
+[debug] [2019-06-19T11:21:53.181Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-19T11:21:54.103Z] firebase-admin has been stubbed.
+[warn] !  Error: Failed to read credentials from file key.json : Error: ENOENT: no such file or directory, open 'C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\key.json '
+    at FirebaseAppError.FirebaseError [as constructor] (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\utils\error.js:42:28)
+    at FirebaseAppError.PrefixedFirebaseError [as constructor] (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\utils\error.js:88:28)
+    at new FirebaseAppError (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\utils\error.js:122:28)
+    at readCredentialFile (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\auth\credential.js:340:15)
+    at credentialFromFile (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\auth\credential.js:319:27)
+    at new ApplicationDefaultCredential (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\auth\credential.js:294:32)
+    at Object.applicationDefault (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\node_modules\firebase-admin\lib\firebase-namespace.js:233:36)
+    at Object.<anonymous> (C:\Users\Aareon2\Desktop\ReactProjects\poc_dev\poc\functions\lib\createServer.js:6:34)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+[warn] !  Your function was killed because it raised an unhandled error.
