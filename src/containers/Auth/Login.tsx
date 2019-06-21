@@ -18,7 +18,7 @@ class Login extends React.Component<ILoginProps> {
   public render() {
     const { login } = this.props;
     return (
-      <Container center={true}>
+      <Container bkgImage={true} center={true}>
         <Card>
           <Title>Iniciar sesión</Title>
           <LoginForm onSubmit={login} />
