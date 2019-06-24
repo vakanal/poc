@@ -101,10 +101,22 @@ export const fetchPosts = () => async (
 export const like = (id: string) => async (
   dispatch: Dispatch,
   getState: () => any,
-  {  }: IServices
+  { auth }: IServices
 ) => {
   // tslint:disable-next-line: no-console
   console.log(id);
+  if (!auth.currentUser) {
+    return;
+  }
+  const token = await auth.currentUser.getIdToken();
+  const result = await fetch("/api/posts", {
+    headers: {
+      authorization: token
+    }
+  });
+  const text = result.text();
+  // tslint:disable-next-line: no-console
+  console.log(text);
 };
 
 export const share = (id: string) => async (
