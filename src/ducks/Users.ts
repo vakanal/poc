@@ -41,16 +41,6 @@ export const register = ({ email, password }: ILogin) => async (
   await doc.set({ role: "user" });
 };
 
-export const logout = () => async (
-  dispatch: Dispatch,
-  getState: () => any,
-  { auth }: IServices
-) => {
-  // tslint:disable-next-line: no-console
-  console.log("LogOut");
-  await auth.signOut();
-};
-
 /***
   try {
     const user = await auth.createUserWithEmailAndPassword(email, password);

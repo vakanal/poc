@@ -30,10 +30,12 @@ export default class Footer extends React.Component<IFooterProps> {
     return (
       <div style={styles.footer}>
         <div onClick={like} style={styles.button}>
-          <FontAwesomeIcon icon={faThumbsUp} /> Like
+          <FontAwesomeIcon icon={faThumbsUp} />
+          &nbsp;Like
         </div>
         <div onClick={share} style={styles.button}>
-          <FontAwesomeIcon icon={faRetweet} /> Compartir
+          <FontAwesomeIcon icon={faRetweet} />
+          &nbsp;Compartir
         </div>
       </div>
     );
