@@ -28,5 +28,8 @@
     "jest",
     "src/setupTests.ts",
     "functions"
-  ]
+  ] ,
+  "rules": {   
+    "interface-name": false,
+  }   
 }
