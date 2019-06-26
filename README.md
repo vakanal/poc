@@ -2,7 +2,9 @@
 
 - Install Yarn in your PC
 - Run your command line into the proyect folder
-- Write yarn install and after that yarn start
+- Write `yarn install` and when finnish `yarn start`
+
+## Introduction
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
