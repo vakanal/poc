@@ -1,5 +1,7 @@
 ## How To Install & Start
 
+- NodeJS Version: 8.16 LTS
+- Yarn Version 1.1.16
 - Install Yarn in your PC
 - Run your command line into the proyect folder
 - Write `yarn install` and when finnish `yarn start`
