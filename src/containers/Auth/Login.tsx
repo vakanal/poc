@@ -12,23 +12,38 @@ import { ILogin, login as loginThunk } from "../../ducks/Users";
 
 interface ILoginProps {
   login: (a: ILogin) => void;
+  data: any;
+  errorMessage: any;
 }
 
 class Login extends React.Component<ILoginProps> {
+  constructor(props: ILoginProps) {
+    super(props);
+  }
+
   public render() {
-    const { login } = this.props;
+    const { login, errorMessage } = this.props;
     return (
       <Container center={true}>
         <Card>
           <Title>Iniciar sesión</Title>
           <LoginForm onSubmit={login} />
+          {errorMessage ? <h3>{errorMessage.message}</h3> : undefined}
         </Card>
       </Container>
     );
   }
 }
 
-const mapStateToProps = (state: any) => state;
+const mapStateToProps = (state: any) => {
+  const {
+    Users: { data, errorMessage }
+  } = state;
+  return {
+    data,
+    errorMessage
+  };
+};
 
 const mapDispatchToProps = (dispatch: ThunkDispatch<any, any, any>) => ({
   login: (payload: ILogin) => dispatch(loginThunk(payload))

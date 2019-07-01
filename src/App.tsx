@@ -23,14 +23,32 @@ class App extends React.Component<IAppProps> {
   };
 
   public componentDidMount() {
+    // tslint:disable-next-line: no-console
+    console.log("Componente Montado");
+
     const { auth } = services;
+
+    auth.onIdTokenChanged(user => {
+      if (user) {
+        // tslint:disable-next-line: no-console
+        console.log("User: ", user);
+      } else {
+        // tslint:disable-next-line: no-console
+        console.log("NO user");
+      }
+    });
+
     auth.onAuthStateChanged(user => {
       const { history } = this.props;
       if (user) {
+        // tslint:disable-next-line: no-console
+        console.log("User: ", user);
         if (["/", "/register"].indexOf(location.pathname) > -1) {
           history.push("/app/newsfeed");
         }
       } else {
+        // tslint:disable-next-line: no-console
+        console.log("NO user");
         if (/\app\/./.test(location.pathname)) {
           history.push("/");
         }
@@ -39,6 +57,11 @@ class App extends React.Component<IAppProps> {
         loading: false
       });
     });
+  }
+
+  public componentWillMount() {
+    // tslint:disable-next-line: no-console
+    console.log("Componente desmontado");
   }
 
   public render() {
